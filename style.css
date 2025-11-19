@@ -114,42 +114,29 @@ header {
 }
 
 /* ================================
-   SOCIAL ICONS — UPDATED SIZE & SPACING
+   SOCIAL ICONS — CLEAN, NO CIRCLES
    ================================ */
 .social-links {
   display: flex;
   align-items: center;
-  gap: 18px; /* increased from 12 */
+  gap: 14px; /* comfortable spacing */
 }
 
 .social-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 34px;   /* increased from 28 */
-  height: 34px;  /* increased from 28 */
-  font-size: 16px;   /* increased for readability */
-  font-weight: bold;
-  border-radius: 50%;
+  font-size: 18px;   /* slightly larger, readable */
+  font-weight: 600;
+  color: var(--primary-color); /* same blue as your site */
   text-decoration: none;
-  background: #002d62;  /* NPC navy blue */
-  color: white;
-  transition: background 0.2s ease, transform 0.1s ease;
+  transition: color 0.2s ease;
 }
 
 .social-link:hover {
-  background: #004b9f;
-  transform: scale(1.07); /* subtle hover feedback */
-}
-
-.social-link--x {
-  font-weight: 700;
+  color: var(--accent-color); /* a brighter blue on hover */
 }
 
 .social-link--yt {
-  font-size: 20px; /* adjust triangle visual balance */
+  font-size: 20px; /* triangle looks better slightly larger */
 }
-
 
 /* =========================
    HERO
