@@ -114,31 +114,32 @@ header {
 }
 
 /* ================================
-   SOCIAL ICONS — MATCHES NPC SITE
+   SOCIAL ICONS — UPDATED SIZE & SPACING
    ================================ */
 .social-links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px; /* increased from 12 */
 }
 
 .social-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
-  font-size: 14px;
+  width: 34px;   /* increased from 28 */
+  height: 34px;  /* increased from 28 */
+  font-size: 16px;   /* increased for readability */
   font-weight: bold;
   border-radius: 50%;
   text-decoration: none;
   background: #002d62;  /* NPC navy blue */
   color: white;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .social-link:hover {
   background: #004b9f;
+  transform: scale(1.07); /* subtle hover feedback */
 }
 
 .social-link--x {
@@ -146,8 +147,9 @@ header {
 }
 
 .social-link--yt {
-  font-size: 16px;
+  font-size: 20px; /* adjust triangle visual balance */
 }
+
 
 /* =========================
    HERO
