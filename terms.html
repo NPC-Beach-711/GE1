@@ -16,20 +16,53 @@
 <body>
   <div class="page-wrap">
 
-    <header>
-      <div class="container header-inner">
-        <div class="logo-wrap">
-          <img src="NPC_Logo.png" alt="National Petroleum Council logo" />
-          <div class="site-title">National Petroleum Council</div>
-        </div>
-        <nav aria-label="Main navigation">
-          <a href="index.html#home">Home</a>
-          <a href="index.html#downloads">Report Downloads</a>
-          <a href="presentations.html">Presentations</a>
-          <a href="index.html#about-npc">About NPC</a>
-        </nav>
-      </div>
-    </header>
+<!-- HEADER -->
+<header id="home">
+  <div class="container header-inner">
+    <div class="logo-wrap">
+      <img src="NPC_Logo.png" alt="National Petroleum Council logo" />
+      <div class="site-title">National Petroleum Council</div>
+    </div>
+
+    <nav aria-label="Main navigation" class="main-nav">
+      <a href="index.html#home">Home</a>
+      <a
+        href="NPC_Gas-Electric_Coordination_Draft_Report.pdf"
+        onclick="trackEvent('view_pdf', 'Nav', 'Full Report')"
+      >
+        Full Report
+      </a>
+      <a
+        href="index.html#presentations"
+        onclick="trackEvent('nav_click', 'Nav', 'Presentations Section')"
+      >
+        Presentations
+      </a>
+      <a href="index.html#about-npc">About NPC</a>
+    </nav>
+
+    <div class="social-links">
+      <a
+        href="https://www.linkedin.com/company/national-petroleum-council/"
+        class="social-link"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        in
+      </a>
+
+      <a
+        href="https://www.youtube.com/@NationalPetroleumCouncil"
+        class="social-link social-link--yt"
+        target="_blank"
+        aria-label="YouTube"
+      >
+        ▶
+      </a>
+    </div>
+  </div>
+</header>
+
 
     <main>
       <div class="container static-page">
@@ -43,7 +76,7 @@
 
         <h2>2. Purpose of This Site</h2>
         <p>
-          This website provides informational materials and publications produced by the National Petroleum Council (“NPC”).
+          This website provides informational materials and publications produced by the National Petroleum Council (NPC).
           Content is intended for public reference and may be used for non-commercial purposes with proper attribution.
         </p>
 
@@ -90,15 +123,19 @@
       </div>
     </main>
 
-    <footer>
-      <div class="container footer-inner">
-        <div>&copy; 2025 · National Petroleum Council</div>
-        <div class="footer-links">
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms of Use</a>
-        </div>
-      </div>
-    </footer>
+<footer>
+  <div class="container footer-inner">
+    <div>
+      &copy; 2025 · National Petroleum Council
+    </div>
+    <div class="footer-links">
+      <a href="#">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
 
   </div>
 </body>
