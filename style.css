@@ -188,6 +188,28 @@ header {
   background-color: #ffffff;
   color: var(--primary-color);
 }
+.hero-text h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.hero-text h2 {
+  margin: 0.5rem 0 0.5rem;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  font-weight: 400;
+  color: #e8f0fa; /* more readable than harsh white */
+  max-width: 60ch;
+}
+
+.hero-text .hero-subtitle {
+  margin-top: 0.25rem;
+  max-width: 65ch;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  color: #d6e2f0;
+  line-height: 1.5;
+}
+
 
 /* =========================
    MAIN CONTENT
