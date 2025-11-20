@@ -29,7 +29,7 @@
     <header id="home">
       <div class="container header-inner">
         <div class="logo-wrap">
-          <img src="NPC_Logo.png" alt="National Petroleum Council logo" />
+          <img src="NPC_Logo.png" alt="NPC logo" />
           <div class="site-title">National Petroleum Council</div>
         </div>
 
@@ -37,6 +37,7 @@
           <a href="index.html#home">Home</a>
           <a
             href="NPC_Gas-Electric_Coordination_Draft_Report.pdf"
+            target="_blank"
             onclick="trackEvent('view_pdf', 'Nav', 'Full Report')"
           >
             Full Report
@@ -55,6 +56,7 @@
             href="https://www.linkedin.com/company/national-petroleum-council/"
             class="social-link"
             target="_blank"
+            rel="noopener"
             aria-label="LinkedIn"
           >
             in
@@ -64,6 +66,7 @@
             href="https://www.youtube.com/@NationalPetroleumCouncil"
             class="social-link social-link--yt"
             target="_blank"
+            rel="noopener"
             aria-label="YouTube"
           >
             ▶
@@ -78,27 +81,27 @@
         <h1>Contact</h1>
 
         <p>
-          For questions regarding the Gas-Electric Coordination study,
-          National Petroleum Council publications, or this website, you may contact:
+          For questions regarding the Gas–Electric Coordination study, National Petroleum Council
+          publications, or this website, you may contact:
         </p>
 
         <p>
-          <strong>National Petroleum Council</strong><br>
-          Washington, DC<br>
+          <strong>National Petroleum Council</strong><br />
+          Washington, DC<br />
           Email:
           <a href="mailto:info@npc.org">info@npc.org</a>
         </p>
 
-        <h2>Media & Public Inquiries</h2>
+        <h2>Media &amp; Public Inquiries</h2>
         <p>
-          Please include your name, organization, and a brief description of your request.
-          The NPC will respond as appropriate based on the nature of the inquiry.
+          Please include your name, organization, and a brief description of your request. NPC staff
+          will respond as appropriate based on the nature of the inquiry.
         </p>
 
         <h2>Website Feedback</h2>
         <p>
-          If you discover broken links, accessibility issues, or have suggestions to improve 
-          this microsite, please include “Website Feedback” in the subject line of your email.
+          If you encounter broken links, accessibility issues, or have suggestions to improve this
+          microsite, please include “Website Feedback” in the subject line of your email.
         </p>
       </div>
     </main>
@@ -107,8 +110,10 @@
     <footer>
       <div class="container footer-inner">
         <div>
-&copy; 2025 · <a href="https://www.npc.org" target="_blank">National Petroleum Council</a>
-
+          &copy; 2025 ·
+          <a href="https://www.npc.org" target="_blank" rel="noopener">
+            National Petroleum Council
+          </a>
         </div>
         <div class="footer-links">
           <a href="contact.html">Contact</a>
@@ -120,7 +125,7 @@
 
   </div>
 
-  <!-- GA helper -->
+  <!-- Simple GA event helper -->
   <script>
     function trackEvent(action, category, label) {
       if (typeof gtag === 'function') {
